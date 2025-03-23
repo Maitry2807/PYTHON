@@ -1,0 +1,1 @@
+# Check whether a given number is prime, is perfect, is Armstrong, is palindrome, is automorphic.
