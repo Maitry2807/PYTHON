@@ -1,4 +1,8 @@
 def q6():
-    minutes=float(input("Enter the no of minutes:"))
-    hours=minutes/60
-    print("The minutes in hours is",hours)
+    fahrenheit = [32, 68, 104, 212, 50]  # Example temperatures
+    celsius = []
+
+    for f in fahrenheit:
+        celsius.append((f - 32) * 5 / 9)
+
+    print(celsius)

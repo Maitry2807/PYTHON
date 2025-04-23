@@ -1,11 +1,5 @@
 def q5():
-    a=int(input())
-    b=int(input())
-    add=a+b
-    print(add)
-    sub=a-b
-    print(sub)
-    product=a*b
-    print(product)
-    div=a/b
-    print(div)
+    strings = ["hello", "world", "python", "code"]
+    for i in range(len(strings)):
+        strings[i] = strings[i].upper()
+    print(strings)
