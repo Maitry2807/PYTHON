@@ -1,5 +1,8 @@
 def q5():
-    strings = ["hello", "world", "python", "code"]
-    for i in range(len(strings)):
-        strings[i] = strings[i].upper()
-    print(strings)
+    l=[(),'Ronit',('lst',),[1,2,3],[]]
+    for i in l:
+        if(type(i)==tuple and len(i)==0):
+            l.remove(i)
+        else:
+            pass
+    print(l)

@@ -1,8 +1,6 @@
 def q6():
-    fahrenheit = [32, 68, 104, 212, 50]  # Example temperatures
-    celsius = []
-
-    for f in fahrenheit:
-        celsius.append((f - 32) * 5 / 9)
-
-    print(celsius)
+    t=(1,2,3,5,6,7)
+    t=list(t)
+    t[0]=0
+    t=tuple(t)
+    print(t)

@@ -1,15 +1,14 @@
-import random
-odd_numbers = random.sample(range(1, 100, 2), 5)
-even_numbers = random.sample(range(2, 100, 2), 4)
-odd_numbers[2] = even_numbers
-print("Modified list after replacing third element with even numbers:", odd_numbers)
-flattened_list = []
-for i in odd_numbers:
-    if type(i)==list:
-        for sub_item in i:
-            flattened_list.append(sub_item)
-    else:
-        flattened_list.append(i)
-print("Flattened list:", flattened_list)
-flattened_list.sort()
-print("Sorted list:", flattened_list)
+def q1():
+    l=[('Ronit','Rudresh Bhai'),('Yug',),'Krish']
+    boys=0
+    girls=0
+    for i in l:
+        if type(i)==tuple:
+            if len(i)>1:
+                for j in i:
+                    boys=boys+1
+            else:
+                boys=boys+1
+        else:
+            girls=girls+1
+    print(girls,boys)

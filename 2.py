@@ -1,10 +1,6 @@
-import random
 def q2():
-    lst=[]
-    for i in range(20):
-        lst.append(random.randint(1,10))
-    print(lst)
-    inp=int(input("Enter the number whose occurence is required between 1-9:"))
-    for j in range(10):
-        if lst[j]==inp:
-            print(j)
+        l=[(100,'Ronit',19),(99,'Yug',18),(120,'Krish',18),(159,'Tanmesh',18)]
+        roll=[i[0] for i in l]
+        name=[i[1] for i in l]
+        age=[i[2] for i in l]
+        print(roll,name,age)
