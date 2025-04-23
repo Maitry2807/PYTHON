@@ -1,8 +1,7 @@
 def q5():
-    l=[(),'Ronit',('lst',),[1,2,3],[]]
-    for i in l:
-        if(type(i)==tuple and len(i)==0):
-            l.remove(i)
-        else:
-            pass
-    print(l)
+    d_price={"Shampoo":120,"Soap":20,"Rice":120}
+    d_quantity={"Shampoo":1,"Soap":2,"Rice":10}
+    total=0
+    for key in d_price.keys():
+        total=total+d_price[key]*d_quantity[key]
+    print(total)

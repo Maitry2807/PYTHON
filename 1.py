@@ -1,14 +1,9 @@
 def q1():
-    l=[('Ronit','Rudresh Bhai'),('Yug',),'Krish']
-    boys=0
-    girls=0
-    for i in l:
-        if type(i)==tuple:
-            if len(i)>1:
-                for j in i:
-                    boys=boys+1
-            else:
-                boys=boys+1
-        else:
-            girls=girls+1
-    print(girls,boys)
+    d={}
+    d0={"brand": "Ford","model": "Mustang","year": 1964}
+    d1={'type' : 'fruit', 'name' : 'banana'}
+    d2={"Germany": "Berlin", "Canada": "Ottawa", "England": "London"}
+    d.update(d0)
+    d.update(d1)
+    d.update(d2)
+    print(d)
