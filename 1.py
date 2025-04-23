@@ -1,9 +1,9 @@
 def q1():
-    d={}
-    d0={"brand": "Ford","model": "Mustang","year": 1964}
-    d1={'type' : 'fruit', 'name' : 'banana'}
-    d2={"Germany": "Berlin", "Canada": "Ottawa", "England": "London"}
-    d.update(d0)
-    d.update(d1)
-    d.update(d2)
-    print(d)
+    words=[]
+    s=set()
+    x=int(input("Enter the number of words you want to enter in list:"))
+    for i in range(x):
+        word=input("Enter the word:")
+        words.append(word.upper())
+    s=set(words)
+    print(s)

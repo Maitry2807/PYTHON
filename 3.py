@@ -1,11 +1,18 @@
-import random
 def q3():
-    lst=[]
-    for i in range(50):
-        lst.append(random.randint(1,30))
-    print(lst)
-    l=[]
-    for i in lst:
-        if i not in l:
-            l.append(i)
-    print(l)
+    s=set()
+    for i in range(5):
+        name=input("Enter the name you want to add in set:")
+        s.add(name)
+    oldName=input("Enter the name you want to modify:")
+    try:
+        s.remove(oldName)
+        newName=input("Enter the modified name:")
+        s.add(newName)
+    except:
+        print("Value not found in set")
+    name=input("Enter the name you want to delete:")
+    s.remove(name)
+    name=input("Enter the name you want to delete:")
+    s.remove(name)
+    print(s)
+q3()
